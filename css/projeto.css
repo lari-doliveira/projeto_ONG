@@ -1,0 +1,136 @@
+.fundo {
+    background-color: rgb(247, 244, 244);
+    padding: calc(var(--space-4) * 4);
+}
+
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(320px, 460px));
+    justify-content: center; 
+    gap: 40px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.card{
+    background: var(--cor-0);
+    border: 0.4px solid var(--cor-p3);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.card > img{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-historia,
+.card-atividade,
+.card-numeros,
+.card-ajuda{
+    padding: 18px 20px 22px;
+}
+
+.card-historia h2,
+.card-atividade h2,
+.card-numeros h2,
+.card-ajuda h2{
+    margin: 0 0 10px 0;
+    font-size: 30px;
+    line-height: 1.15;
+    color: var(--cor-p5)
+}
+
+.card-historia h2::after,
+.card-atividade h2::after,
+.card-numeros h2::after,
+.card-ajuda h2::after{
+    content:'';
+    display: inline-block;
+    height: 3px;
+    width: 420px;
+    background-color: var(--cor-p5);   
+}
+
+.card-historia p,
+.card-atividade p{
+    margin: 0 auto;
+    color: var(--cor-1);
+    max-width: 90%;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.card-ajuda p,
+.card-numeros p{
+    margin: 0 auto;
+    line-height: 1.6;
+    max-width: 90%;
+    text-align: justify;
+}
+
+.card-ajuda li,
+.card-numeros li{
+    margin: 0 auto;
+    line-height: 1.6;
+    max-width: 90%;
+    text-align: justify;
+}
+
+.card-numeros span{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-ajuda li{
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.card-ajuda button{
+    background-color: var(--cor-p5);
+    display: block;
+    margin: 40px auto 0 auto;
+    font-size: 24px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    border: none;
+}
+
+.card-ajuda button:hover {
+    background-color: var(--cor-p3);
+    transform: scale(1.03);
+    transition: all 0.2s ease;
+}
+
+.card-ajuda a{
+    color: var(--cor-1);
+}
+
+@media(max-width: 990px){
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 20px;
+        margin-right: 20px;
+        gap: 20px;
+    }
+    .card-historia h2::after,
+    .card-atividade h2::after,
+    .card-numeros h2::after,
+    .card-ajuda h2::after{
+    display: none; 
+}
+}

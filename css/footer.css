@@ -1,0 +1,50 @@
+.contato {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: calc(var(--space-4) * 8) calc(var(--space-4) * 4);
+}
+
+.direitos {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-4) 35px; 
+    color: var(--cor-3);
+}
+
+.contato h3 {
+    font-size: 40px;
+}
+
+.contato a,
+.contato li {
+    color: var(--cor-1);
+    font-size: 24px;   
+}
+
+.redes a {
+    display: inline-block;
+    padding: var(--space-3);
+}
+
+@media(max-width: 930px) {
+  footer .contato {
+    display: grid;
+    gap: 0.75rem;
+}
+
+  footer .contato .redes {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+  footer h3 {
+    margin: 0;
+    font-size: 1.125rem;
+}
+}

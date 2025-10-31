@@ -1,0 +1,29 @@
+body {
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    padding: var(--space-1);
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+    margin-left: auto;
+    margin-right: auto;
+}
+

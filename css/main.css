@@ -1,0 +1,167 @@
+.introducao,
+.visao,
+.valores,
+.objetivos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: calc(var(--space-4) * 8) calc(var(--space-4) * 4);
+}
+
+.bg {
+    background-color: var(--cor-p3);
+    margin: 0px;
+}
+
+.introducao h1,
+.visao h1,
+.valores h1,
+.objetivos h1 {
+    font-size: 100px;
+    line-height: 1.1;
+    font-weight: 800;
+    flex: 1;
+    text-align: left;
+    color: var(--cor-1);
+}
+
+.introducao p,
+.visao p {
+    flex: 1;
+    font-size: 20px ;
+    line-height: 1.7;
+    max-width: 600px;
+    text-align: left;
+    color: var(--cor-1);
+}
+
+.valores li,
+.objetivos li {
+    flex: 1;
+    font-size: 20px;
+    line-height: 1.7;
+    max-width: 560px ;
+    text-align: left;
+    color: var(--cor-1); 
+}
+
+.introducao p::before {
+    content:'';
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    background-color: var(--cor-1);
+    margin-bottom: 2px; 
+}
+
+.visao p::before {
+    content:'';
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    background-color: var(--cor-1);
+    margin-bottom: 2px; 
+    margin-right: 6px;
+}
+
+.valores span::before,
+.objetivos span::before {
+    content:'';
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    background-color: var(--cor-1);
+    margin-bottom: 2px;  
+    margin-right: 6px;
+}
+
+@media (max-width: 930px) {
+  .introducao,
+  .visao,
+  .valores,
+  .objetivos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding-inline: 1rem;
+  }
+
+  .bg .container {
+    padding-block: 1.25rem;
+  }
+  
+  .introducao h1,
+  .visao h1,
+  .valores h1,
+  .objetivos h1 {
+    width: 100%;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+    word-break: keep-all;
+  }
+
+  .introducao p,
+  .visao p,
+  .valores p,
+  .objetivos p {
+    font-size: 1rem;        
+    line-height: 1.7;       
+    margin: 0.5rem 0 0;     
+    text-wrap: pretty;      
+    overflow-wrap: anywhere;
+  }
+
+  .valores ul,
+  .objetivos ul {
+    margin: 0.75rem 0 0;
+    padding-left: 1rem;   
+    display: grid;
+    gap: 0.5rem;
+    width: 100%;
+    margin: 0;
+    line-height: 1.6;       
+  }
+
+   .visao p {
+    width: 100%;
+    margin: 0;
+   }
+
+  .valores li,
+  .objetivos li {
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+  }
+
+  .valores li span,
+  .objetivos li span {
+    font-weight: 600;    
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+
+@media(min-width: 931px){
+  .introducao h1,
+  .visao h1,
+  .valores h1,
+  .objetivos h1 {
+   font-size: 40px;
+  }
+}
+
+
+
+
+
+
+
+
