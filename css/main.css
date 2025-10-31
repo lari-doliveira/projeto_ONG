@@ -149,12 +149,12 @@
 }
 
 
-@media(min-width: 931px){
+@media (min-width: 931px) {
   .introducao h1,
   .visao h1,
   .valores h1,
   .objetivos h1 {
-   font-size: 40px;
+    font-size: 100px; /* Ajuste: mantemos título grande em telas largas */
   }
 }
 
