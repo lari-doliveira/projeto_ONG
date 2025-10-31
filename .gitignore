@@ -1,0 +1,23 @@
+# IDEs
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Node/build (se houver)
+node_modules/
+dist/
+build/
+
+# env
+.env
+.env.local
+
+# OneDrive temp
+~$*
